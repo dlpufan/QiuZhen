@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/read/read",
+    "pages/write/write",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/texts/texts",
+    "pages/userRead/userRead",
+    "pages/userWrite/userWrite",
+    "pages/adminSend/adminSend",
+    "pages/adminExamine/adminExamine"
+  ],
+  "tabBar":{
+    "list":[
+    {
+      "pagePath":"pages/read/read",
+      "text":"读文章",
+      "iconPath":"/img/find1.png",
+      "selectedIconPath":"img/find2.png"
+    },
+    {
+      "pagePath":"pages/write/write",
+      "text":"我要辟谣",
+      "iconPath":"img/write1.png",
+      "selectedIconPath":"img/write2.png"
+    },
+    {
+      "pagePath":"pages/mine/mine",
+      "text":"我的",
+      "iconPath":"img/mine1.png",
+      "selectedIconPath":"img/mine2.png"
+    }
+  ],
+  "color":"#000",
+  "selectedColor":"#0094ff"
+},
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#606060",
+    "navigationBarTitleText": "求真",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

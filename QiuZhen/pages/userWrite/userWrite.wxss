@@ -1,0 +1,37 @@
+/* pages/userWrite/userWrite.wxss */
+.text_view{
+  width:100%;
+  border-top: 1px solid #443c3c67;
+  border-bottom: 1px solid #181515;
+  margin-top: 7rpx;
+  margin-bottom: 1rpx;
+  text-align: center;
+}
+.text_view_title{
+  font-size: 40rpx;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  text-align: center;
+  margin:0 auto;
+}
+.text_view_text{
+  font-size: 35rpx;
+  font-family: "微软雅黑";
+}
+.text_view_time{
+  font-size: 30rpx;
+  color:#a0a0a0;
+}
+.yellow{
+  font-size: 35rpx;
+  color:rgb(177, 177, 0);
+  font-weight: bold;
+}
+.green{
+  font-size: 35rpx;
+  color:green;
+}
+.red{
+  font-size: 35rpx;
+  color:red;
+}

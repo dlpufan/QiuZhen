@@ -1,0 +1,25 @@
+<!--pages/read/read.wxml-->
+<view class="searchView"><input bindinput="handleSearch" class="readSearch" placeholder="搜索" placeholder-style="text-align:center;font-size:30rpx;letter-spacing:10rpx;"/></view>
+<view>
+  
+      <swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000' circular='true' current="{{current}}">
+        
+          <swiper-item wx:for="{{imgSrc}}" wx:for-item="item" wx:for-index="index" wx:key="id" > 
+            <navigator url="/pages/texts/texts?id={{item.textID}}" class="lunboImg">
+              <image src='{{item.imgSrc}}' class="lunboImg"></image> 
+            </navigator>
+          </swiper-item>
+      </swiper>
+</view>
+
+<view wx:for="{{text}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+  <navigator url="/pages/texts/texts?id={{item.id}}">
+    <view class="text_view">
+    <view class="text_view_font">  <text> {{item.title}}</text></view>
+    <view class="text_view_image">  <image src="{{item.imgSrc}}" ></image></view>
+    <view class="text_view_text">  <text>{{item.text}}</text></view>
+    <view class="text_view_bottom">  <text>{{item.sendTime}} {{item.author}}</text></view>
+    </view>
+  </navigator>
+</view>
+

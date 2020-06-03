@@ -1,0 +1,53 @@
+/* pages/adminSend/adminSend.wxss */
+page{
+  background-color: #878787;
+}
+.body{
+  width: 90%;
+  height: 110%;
+  border-radius: 30rpx;
+ border:1rpx solid black;
+background-color:white;
+}
+.container-write {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+ 
+} 
+textarea{
+  border:1rpx solid black;
+  margin:0 auto;
+  padding-left: 20rpx;
+  padding-top: 5rpx;
+  font-size: 30rpx;
+  width: 90%;
+}
+.textInput{
+  margin:30rpx 0 30rpx 0;
+}
+.title{
+  font-size: 45rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  margin-bottom: 50rpx;
+}
+.tips{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  text-indent:2em;
+  color:#7e7e7e;
+}
+.inputTitle{
+  height:45rpx;
+}
+.bottom{
+ margin-top: 100rpx;
+}
+.bottom button{
+  margin-bottom: 65rpx;
+}

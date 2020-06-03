@@ -1,0 +1,10 @@
+<!--pages/write/write.wxml-->
+<view class="container-write">
+<view class="body">
+<view class="title"><text>我要辟谣</text></view>
+<view class="tips"><text>tips:请您在已核实消息为谣言的情况下向我们汇报，感谢您的配合。</text></view>
+<view class="textInput"><textarea placeholder="请在此输入标题" class="inputTitle" placeholder-style="letter-spacing:10rpx;" bindinput="handleTitle" value="{{title}}"></textarea></view>
+<view class="textInput"><textarea placeholder="请在此输入正文" class="inputText" placeholder-style="letter-spacing:10rpx;" bindinput="handleText" value="{{text}}"></textarea></view>
+<view class="bottom"><button type="primary" bindtap="buttonSubmit">提交</button></view>
+</view>
+</view>

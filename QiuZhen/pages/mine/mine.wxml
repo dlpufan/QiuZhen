@@ -1,0 +1,32 @@
+<!--pages/mine/mine.wxml-->
+<view  class="loginButton">
+  <button wx:if="{{!hasUserInfo&&canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" type="default"> 登录 </button>
+   <block wx:else>
+   <view  class="userinfoHeadImg"><image src="{{userInfo.avatarUrl}}"></image></view>
+      <view class="userinfoName"><text>{{userInfo.nickName}}</text></view>
+    </block>
+</view>
+<block wx:if="{{hasUserInfo&&canIUse}}">
+ <view>
+   <view class="userInfo">
+      <navigator url="../userRead/userRead" class="userInfoNavigator">
+        <view class="userInfoView"><view><text>我读过的 : {{userReadArray.length}}</text></view></view>
+      </navigator>
+      <navigator url="../userWrite/userWrite" class="userInfoNavigator">
+        <view class="userInfoView"><view><text>我写过的 : {{userWrite.length}}</text></view></view>
+      </navigator>
+    </view>
+  </view>
+</block>
+<block wx:if="{{hasUserInfo&&canIUse}}">
+ <view wx:if="{{userStatus[0].userType==2}}">
+   <view class="userInfo">
+      <navigator url="../adminSend/adminSend" class="userInfoNavigator">
+        <view class="userInfoView"><view><text>管理员模式：发布</text></view></view>
+      </navigator>
+      <navigator url="../adminExamine/adminExamine" class="userInfoNavigator">
+        <view class="userInfoView"><view><text>管理员模式：审核</text></view></view>
+      </navigator>
+    </view>
+  </view>
+</block>

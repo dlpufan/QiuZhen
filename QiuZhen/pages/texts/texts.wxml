@@ -1,0 +1,19 @@
+<!--pages/texts/texts.wxml-->
+<view>
+  <view class="title" style="{{title_style}}">
+    <view class = "title_text">
+      <text>{{text[0].title}}</text>
+    </view>
+    <view class = "title_author">
+      <text>{{text[0].sendTime}} {{text[0].author}} 浏览量:{{text[0].readCount}}</text>
+    </view>
+  </view>
+  <button size="mini" class="delectButton" bindtap="lunBo">轮播</button>
+  <button size="mini" class="delectButton" bindtap="delect">删除</button>
+</view>
+
+
+<view><image src="{{text[0].imgSrc}}" mode="widthFix"></image></view>
+<view class="texts">
+  <text>{{text[0].text}}</text>
+</view>

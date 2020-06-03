@@ -1,0 +1,68 @@
+/* pages/adminExamine/adminExamine.wxss */
+page{
+  background-color: #878787;
+}
+.body{
+  width:90%;
+  border-radius: 30rpx;
+  border:2rpx solid black;
+  background-color:white;
+  margin-top: 40rpx;
+}
+.container-write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+} 
+
+.title{
+  font-size: 75rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+.tips{
+  margin: 15rpx 0 15rpx 0;
+  font-size: 24rpx;
+  color:#7e7e7e;
+}
+
+.bottom button{
+  margin-bottom: 40rpx;
+   margin-top: 100rpx;
+}
+
+
+
+.text_view_font{
+  width:100%;
+  font-size: 40rpx;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+}
+.text_view_text{
+  width:95%;
+  float: left;
+  font-size: 26rpx;
+  color:#878787;
+  margin-left: 2.5%;
+  text-indent: 2em;
+  text-align: left;
+}
+.text_view_bottom{
+  width:80%;
+  margin-left: 2%;
+  font-size: 28rpx;
+}
+.bottom,.bottom1{
+  position: relative;
+  bottom:45rpx;
+}
+.text{
+  width:100%;
+  margin-bottom: 40rpx;
+}
+

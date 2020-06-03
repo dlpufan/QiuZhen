@@ -1,0 +1,13 @@
+<!--pages/userWrite/userWrite.wxml-->
+<view style="text-align:center; font-size:50rpx;"><text>我发布的</text></view>
+
+<view wx:for="{{userWrite}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    <view class="text_view">
+      <view class="text_view_title">  <text> {{item.title}}</text></view>
+      <view class="text_view_text">  <text>正文:{{item.text}}</text></view>
+      <view class="text_view_time">  <text>发布时间:{{item.sendTime}}</text></view>
+      <view class="text_view_type" wx-if="{{item.type==1}}">  <text class="yellow">待审核</text></view>
+      <view class="text_view_type" wx-if="{{item.type==2}}">  <text class="green">已通过！</text></view>
+      <view class="text_view_type" wx-if="{{item.type==3}}">  <text class="red">被打回</text></view>
+    </view>
+</view>

@@ -1,0 +1,35 @@
+/* pages/texts/texts.wxss */
+image{
+  width:80%;
+  margin-left: 10%;
+  margin-top: 40rpx;
+}
+.title{
+  width:80%;
+  font-size: 38rpx;
+  font-weight: bold;
+  float:left;
+}
+.delectButton{
+  float:left;
+}
+.title_text{
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  width:95%;
+}
+.title_author{
+  color:#777777;
+  font-size: 24rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  width:100%;
+}
+.texts{
+  font-size: 28rpx;
+  width:86%;
+  margin-left: 7%;
+  margin-top: 35rpx;
+
+}

@@ -1,0 +1,15 @@
+<!--pages/adminExamine/adminExamine.wxml-->
+<!--pages/mine/mine.wxml-->
+<view class="container-write">
+  <view class="title"><text>审查</text></view>
+  <view class="body" wx:for="{{dataArrs}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+    <view class="text">
+      <view class="tips"><text>tips:请认真的查找有关信息，您的答复关系到事情的真时性</text></view>
+      <view class="text_view_font"><text>{{item.title}}</text></view>
+      <view class="text_view_text"><text>{{item.text}}</text></view>
+      <view class="text_view_bottom">  <text>{{item.sendTime}} 作者：{{item.userName}}</text></view>
+      <view class="bottom"><button type="primary" data-id="{{item.id}}" data-count="{{index}}" bindtap="buttonSubmit1">通过</button></view>
+      <view class="bottom1"><button type="warn" data-id="{{item.id}}"  data-count="{{index}}" bindtap="buttonSubmit2">驳回</button></view>
+    </view>
+  </view>
+</view>
